@@ -1,0 +1,1 @@
+<footer class="centrado" style="background-color: skyblue;">Realizado por: Francisco Alcaraz Hernández - IES Alcántara - <?= date('Y')?></footer>

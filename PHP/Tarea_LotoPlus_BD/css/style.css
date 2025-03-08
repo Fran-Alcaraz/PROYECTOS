@@ -1,0 +1,536 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid #1f92a9;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-container {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-container img {
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    /* Cambiado de inline-flex a flex */
+    align-items: center;
+    /* Alinea verticalmente los elementos al centro */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+.botones-usuario{
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    width: 90.5%;
+    margin: 0;
+    display: inline-block;
+    background-color: transparent;
+}
+
+header nav ul li, .botones-usuario {
+    margin: 5px 10px;
+    /* Ajusta el espacio interno de los enlaces */
+    border: 1px solid #1f92a9;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    a {
+        padding: 10px 15px;
+        transition: color 0.3s ease;
+        display: inline-block;
+    }
+}
+
+header .menu-container img {
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+header nav ul li:hover, .botones-usuario:hover {
+    a {
+        color: white;
+    }
+
+    color: white;
+    background-color: #1f92a9;
+    cursor: pointer;
+}
+
+header nav ul li a , .botones-usuario{
+    color: #1f92a9;
+    text-decoration: none;
+}
+
+.lista {
+    width: 98.5%;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 100%;
+    margin-left: .5%;
+}
+
+#btns-anyadir, #btns-anyadir-usuario{
+    display: flex;
+    gap: 0.5em;
+}
+
+#btns-anyadir button{
+    font-size: 16px;
+}
+
+#btns-anyadir-usuario{
+    text-align: center;
+}
+
+#btns-anyadir-usuario a , #btns-anyadir-usuario button, #btns-anyadir a, #btns-anyadir button{
+    color: #1f92a9;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #1f92a9;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btns-anyadir-usuario a:hover , #btns-anyadir-usuario button:hover, #btns-anyadir a:hover, #btns-anyadir button:hover{
+    background-color: #1f92a9;
+    color: white;
+    cursor: pointer;
+}
+
+#btns-anyadir-usuario img, #btns-anyadir img {
+    padding-right: 10px;
+}
+
+.listado {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.listado thead {
+    background-color: #1f92a9;
+    color: white;
+}
+
+.listado th,
+.listado td {
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.listado tbody td a {
+    text-decoration: none;
+    color: black;
+}
+
+.listado form input[type="submit"] {
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.limit-text{
+    text-wrap: nowrap;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+}
+
+.wrap-text{
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 100px;
+}
+
+#editar {
+    color: #1f92a9;
+    border-color: #1f92a9;
+}
+
+#editar:hover {
+    background-color: #1f92a9;
+    color: white;
+}
+
+#eliminar {
+    color: red;
+    border-color: red;
+}
+
+#eliminar:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-crear{
+    background-color: #1f92a9;
+}
+
+.form-container {
+    display: flex; /* Activa el uso de flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 2%;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+#form-sorteo{
+    width: 700px;
+}
+
+.form-premio {
+    width: 500px;
+}
+
+.form-premio select{
+    width: 80.5%;
+    height: 45px;
+    margin-left: 5px;
+}
+
+.form-buscar-usuario select, .form-premios-acumulados select{
+    border: 2px solid #19778a;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 96.5%;
+}
+
+.form-premios-acumulados select{
+    padding: 20px;
+}
+
+.form-buscar-usuario input{
+    border: 2px solid #19778a;
+    border-radius: 5px;
+}
+
+input[type="date"]{
+    width: 200px;
+}
+
+input:not([type="checkbox"]){
+    height: 40px;
+    width: 250px;
+    margin: 0 5px;
+}
+
+input[type="tel"]{
+    height: auto;
+    margin-top: 25px;
+    width: 150px;
+}
+
+input[type="file"]{
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    padding: 0 5px 5px 5px;
+    width: 310px;
+}
+
+input[type="number"]{
+    width: 200px;
+}
+
+input[type="submit"]{
+    background-color: #1f92a9;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #19778a;
+}
+
+input[type="reset"]{
+    background-color: red;
+}
+
+input[type="reset"]:hover{
+    cursor: pointer;
+    background-color: rgb(189, 0, 0);
+}
+
+input[type="submit"], input[type="reset"]{
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+input[type="password"]{
+    width: 190px;  
+}
+
+select{
+    padding: 5px 5px;
+    background-color: transparent;
+    width:150px
+}
+
+#nsorteo{
+    width: 86%;
+}
+
+textarea{
+    width: 97.5%;
+    height: auto;
+    margin-left: 5px;
+    resize: none;
+}
+
+#barraFortaleza{
+    height: 25px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#titulo{
+    font-size: 10px;
+}
+
+a{
+    color: red;
+}
+
+#labelMarketing{
+    font-size: 13px;
+}
+
+#labelCondiciones{
+    font-size: 14px;
+}
+
+#mostrarContrasenya{
+    background-color: transparent;
+    border: none;
+}
+
+#mostrarContrasenya:hover{
+    cursor: pointer;
+}
+
+.paginacion{
+    margin-top: 15px;
+}
+
+.paginacion a img{
+    position: absolute;
+}
+
+.indicePaginas, .activo{
+    color: #19778a;
+    border: 2px solid #19778a;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.indicePaginas:hover, .activo{
+    color: white;
+    background-color: #19778a;
+    cursor: pointer;
+}
+
+.errores{
+    color: red;
+    font-size: 12px;
+}
+
+ul{
+    justify-content: center;
+}
+
+.bg-rojo{ 
+    background-color: #ff4d4d; 
+}
+
+.bg-naranja { 
+    background-color: #ff8c1a; 
+}
+
+.bg-amarillo { 
+    background-color: #ffd633; 
+}
+
+.bg-verde { 
+    background-color: #99cc33; 
+}
+
+.bg-verde-oscuro { 
+    background-color: #4CAF50; 
+}
+
+.bg-gris { 
+    background-color: #ccc; 
+}
+
+.btn-cancelar{
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.form-buscar{
+    padding: 20px !important;
+}
+
+.input-buscar{
+    width: 97% !important;
+    margin-top: 20px !important;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #1f92a9;
+    padding: 10px 0;
+}
+
+.container-principal {
+    margin-top: 6%;
+    text-align: center; /* Opcional para centrar texto */
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+.container-aviso, .container-btns-premios{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px; /* Opcional para espaciar contenido */
+    border-radius: 8px; /* Opcional para esquinas redondeadas */
+}
+
+.container-usuario{
+    border: 1px solid black;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: left;
+}
+
+.container-usuario img {
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.container-usuario table{
+    margin-left: 40%;
+    text-align: center;
+    text-align: left;
+    justify-content: left;
+}
+
+.container-usuario td{
+    padding: 10px;
+    text-align: center;
+}
+
+#editarUsuario input{
+    background-color: transparent;
+    border: 1px solid #19778a;
+    width: 98.5%;
+    font-size: 17px;
+    font-weight: normal;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.btn-modificar-contrasenya, #form-cambiar-contrasenya input[type="submit"], .container-btns-premios button{
+    background-color: transparent;
+    color: #19778a;
+    border: 1px solid #19778a;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-modificar-contrasenya:hover, #form-cambiar-contrasenya input[type="submit"]:hover, .container-btns-premios button:hover{
+    background-color: #19778a;
+    color: white;
+    cursor: pointer;
+}
+
+#form-cambiar-contrasenya input{
+    width: 130%;
+}
+
+.btns-crear-premios {
+    height: 65% !important;
+    width: 45% !important;
+}
+
+.tabla-btns-premios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.opciones-crear-premios {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.opciones-crear-premios td {
+    padding: 10px;
+    text-align: center;
+}
+
+.opciones-crear-premios td a {
+    display: inline-block; /* Garantiza que el enlace respete padding y tamaño */
+    background-color: transparent;
+    border: 1px solid #19778a;
+    border-radius: 5px;
+    color: #19778a;
+    padding: 10px 20px;
+    width: 55%;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.opciones-crear-premios td a:hover {
+    background-color: #19778a;
+    color: white;
+    cursor: pointer;
+}

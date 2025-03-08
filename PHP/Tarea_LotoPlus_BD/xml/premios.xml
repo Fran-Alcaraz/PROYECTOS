@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<database name="lotoplusdb">
+  <table name="premios">
+    <column name="idpremio">1</column>
+    <column name="idsorteo">1</column>
+    <column name="numero">10205</column>
+    <column name="premio">100</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">2</column>
+    <column name="idsorteo">1</column>
+    <column name="numero">98443</column>
+    <column name="premio">50</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">3</column>
+    <column name="idsorteo">1</column>
+    <column name="numero">34002</column>
+    <column name="premio">10</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">4</column>
+    <column name="idsorteo">2</column>
+    <column name="numero">95205</column>
+    <column name="premio">100</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">5</column>
+    <column name="idsorteo">2</column>
+    <column name="numero">22421</column>
+    <column name="premio">50</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">6</column>
+    <column name="idsorteo">2</column>
+    <column name="numero">61730</column>
+    <column name="premio">10</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">7</column>
+    <column name="idsorteo">1</column>
+    <column name="numero">20204</column>
+    <column name="premio">1000</column>
+  </table>
+  <table name="premios">
+    <column name="idpremio">8</column>
+    <column name="idsorteo">1</column>
+    <column name="numero">73221</column>
+    <column name="premio">600</column>
+  </table>
+</database>

@@ -1,0 +1,41 @@
+h1, h2 {
+    text-align: center;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.btn-verde {
+    background-color: green;
+    color: white;
+}
+
+.btn-amarillo {
+    background-color: yellow;
+    color: black;
+}
+
+.btn-rojo {
+    background-color: red;
+    color: white;
+}
+
+.btn-azul {
+    background-color: blue;
+    color: white;
+}
+
+#tarjeta{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
